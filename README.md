@@ -53,13 +53,13 @@ Insgesamt ergibt sich daraus: Erfassen → Eintragen → Anzeigen → Status än
 
 Wie hängt das jetzt alles zusammen? 
 Datenmodell: 
-[Person]
+Person
 - id (Primärschlüssel)
 - name
 - telefonnummer*/ telefonnummer   (bei anonymen Meldern leer)
 
  (melder_id)  0..1
-[Geisternetz] --------------------> [Person]
+Geisternetz --------------------> Person
 - id (Primärschlüssel)                           1
 - gpsLat*
 - gpsLon*
@@ -70,12 +70,12 @@ Datenmodell:
 - verschollenMelder_id(Fremndschlüssel)// Pflicht wenn VERSCHOLLEN
 
 (berger_id)   0..1
-[Geisternetz] --------------------> [Person]
+Geisternetz--------------------> Person
                                    1
 // Eine Person kann viele Netze bergen (0..*)
 
 (verschollenMelder_id)  0..1
-[Geisternetz] --------------------> [Person]
+Geisternetz --------------------> Person
                                    1
 
 Regeln
@@ -90,3 +90,39 @@ Status
 - Orientierung abegschlossen
 - Anfoderungen festgelegt --> Planung abgeschlossen
 - ATTRUBUTNAMEN VORAB FESTLEGEN. Du hast sonst wieder 10 Namen für ein Attribut!!!
+
+02.02.2026
+Heute geht es darum, dem Programm eine visuelle Struktur zu geben. Das wird zum einen mittels eines ausgearbeiteten Datenmodells auf Basis des ersten Tages gemacht und anschließend durch ein STrukturdiagramm. 
+Zunächst das Datenmodell: 
+
+Person
+id
+role
+name
+phonenumber
+                                      Person 1 --- reported_by --- 0..n GhostNet   
+Person                                Person 1 --- removed_by --- 0..n GhostNet   
+GHOSTNET
+id                           
+latitude
+longitude
+size
+status
+reported_by
+removed_by
+
+Obwohl meldende und bergende Personen dieselbe Entität darstellen, werden zwei getrennte Beziehungen modelliert, 
+da sie unterschiedliche fachliche Bedeutungen und Geschäftsregeln besitzen. 
+Dadurch bleibt das Datenmodell eindeutig, nachvollziehbar und erweiterbar.
+Eine genaue Abbildung wurde mit Excel erstellt.
+
+Als nächstes das Strukturdiagramm
+Es beinhaltet die Beans, den Service und die Entitäten. Eine genaue Darstellung wurde mithilfe von Excel erstellt.
+
+Status: 
+- fachliches Modell ausgearbeitet
+- Datenbankstruktur fertig
+- UML-Strukturdiagramm erstellt
+- Attributnamen festgelegt. HALT DICH DRAN!
+- Kurz: Grundlagen abgeschlossen
+
