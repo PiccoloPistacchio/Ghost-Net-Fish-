@@ -126,3 +126,20 @@ Status:
 - Attributnamen festgelegt. HALT DICH DRAN!
 - Kurz: Grundlagen abgeschlossen
 
+03.02.2026
+Heute starte ich mit dem technischen Grundgerüst. 
+Wenn ich den Aufbau richtig verstanden habe, dann habe ich 3 Schichten: 
+1. JSF/XHTML
+   ein leere Formular
+3. Backing Bean mit den Java Klassen
+   das enthält die Logik
+5. Datenbank mit MySQL
+   und hier wird alles gespeichtert
+
+Ich nutze Eclpsie, um das Webprojekt zu starten. Warum Eclipse? Nach der Webentwicklung habe ich schon in VS reingeschnuppert, allerdings fühle ich mich aktuell in Eclipse sicherer. Außerdem habe ich Eclipse bisher nur für Java genutzt. Es wäre interessant noch andere Möglichkeiten von Eclispe auszutesten. 
+
+Status:
+- nach 4 Stunden nichts funktioniert, Ich kann die Seite aufrufe bekomme aber einen 404
+- gefrustet, Hund auch, morgen von vorne.
+
+
