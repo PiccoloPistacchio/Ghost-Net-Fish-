@@ -142,4 +142,20 @@ Status:
 - nach 4 Stunden nichts funktioniert, Ich kann die Seite aufrufe bekomme aber einen 404
 - gefrustet, Hund auch, morgen von vorne.
 
+04.02.2026
+Ziel heute ist es, ein lauffendes technisches Grundgerüst für eine Java-Webanwenung zu Verwaltug der Geisternetze zu bauen. 
+Folgendes wird heute passieren: 
+1.  Projekt in Eclipse anlegen
+   In Eclipse wird ein Dynamic Web Project erstellt, das auf Apache Tomcat läuft.
+   Die Weboberfläche wird mit JSF umgesetzt, wobei XHTML-Seiten als Views dienen.
+   Konfigurationsdateien werden in XML gepflegt (z.B. web.xml, pom.xml).
+   Maven wird zur Verwaltung der benötigten Abhängigkeiten eingesetzt.
+
+Status:
+- technisches Grundgerüst steht
+
+Nächste Schritte
+3. Ich werde eine klase  Geisternetztabelle anlegen, die erstmal leer sein wird
+4. Ich werde 2 Seiten erbauen, einmal eine Liste und einmal ein Formular
+5. Ich mache einen hübschen Button
 
