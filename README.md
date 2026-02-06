@@ -159,3 +159,15 @@ Nächste Schritte
 4. Ich werde 2 Seiten erbauen, einmal eine Liste und einmal ein Formular
 5. Ich mache einen hübschen Button
 
+6.02.2026
+Ich habe festgestellt, dass ich nach einer Pause eine 500 und dann eine 404 Meldung bekomme. Eine erste Recherche legt nahe, dass es kein inhaltlicher Fehler ist.
+Das Setup ist noch nicht stabil.
+Bevor ich die Datenbank einbinde möchte ich das fixen. Sonst kracht am Ende alles zusammen. 
+Aufgabe: Zuverlässiger Start der Seite. 
+Ergbenis: Durch das Einfügen einer Welcome-File in web-xml, kann Tomcat zuverlässig die Startseite ansteuern. 
+
+Status: 
+technisches Grundgerüst steht und ist stabil.
+
+
+
